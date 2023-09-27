@@ -8,7 +8,15 @@ def count_calls(original_function):
     Returns:
         function: Eine dekorierte Version der ursprünglichen Funktion, die die Anzahl der Aufrufe zählt.
     """
-    ...
+    count = 0
+
+    def wrapper(*args, **kwargs):
+        nonlocal count
+        count += 1
+        print(f"Die Funktion {original_function.__name__} wurde {count} mal aufgerufen.")
+        return original_function(*args, **kwargs)
+
+    return wrapper
 
 @count_calls
 def my_function():
