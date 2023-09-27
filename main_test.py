@@ -12,11 +12,11 @@ def test_count_calls(capsys):
     # Erster Aufruf der Funktion
     function()
     captured = capsys.readouterr()
-    assert captured.out == "Die Funktion test_function wurde 1 mal aufgerufen.\n"
+    assert captured.out == "Die Funktion function wurde 1 mal aufgerufen.\n"
     assert counter == 1
 
     # Zweiter Aufruf der Funktion
     function()
     captured = capsys.readouterr()
-    assert captured.out == "Die Funktion test_function wurde 2 mal aufgerufen.\n"
+    assert captured.out == "Die Funktion function wurde 2 mal aufgerufen.\n"
     assert counter == 2
