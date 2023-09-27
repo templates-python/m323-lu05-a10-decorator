@@ -1,12 +1,20 @@
-def calculate():
+def count_calls(original_function):
     """
-    calculates the total
-    :return: None
+    Ein Decorator, der die Anzahl der Aufrufe einer Funktion zählt.
+
+    Args:
+        original_function (function): Die Funktion, deren Aufrufe gezählt werden sollen.
+
+    Returns:
+        function: Eine dekorierte Version der ursprünglichen Funktion, die die Anzahl der Aufrufe zählt.
     """
-    price = 15.75
-    quantity = 3  # TODO change quantity to 5
-    print(f'Total: {price * quantity}')
+    ...
 
+@count_calls
+def my_function():
+    print("Ich tue etwas")
 
+#Testen Sie Ihren Decorator
 if __name__ == '__main__':
-    calculate()
+    my_function()
+    my_function()
