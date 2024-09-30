@@ -10,11 +10,13 @@ def count_calls(original_function):
     """
     ...
 
+
 @count_calls
 def my_function():
     print("Ich tue etwas")
 
-#Testen Sie Ihren Decorator
-if __name__ == '__main__':
+
+# Testen Sie Ihren Decorator
+if __name__ == "__main__":
     my_function()
     my_function()
