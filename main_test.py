@@ -1,5 +1,6 @@
 from main import count_calls
 
+
 def test_count_calls(capsys):
     # Zähler zurücksetzen
     counter = 0
