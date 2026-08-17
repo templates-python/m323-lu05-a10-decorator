@@ -1,3 +1,8 @@
+"""Einfacher Decorator.
+
+Aufgabenstellung: https://wiki.bzz.ch/modul/m323/learningunits/lu05/aufgaben/decorator
+"""
+
 def count_calls(original_function):
     """
     Ein Decorator, der die Anzahl der Aufrufe einer Funktion zählt.
